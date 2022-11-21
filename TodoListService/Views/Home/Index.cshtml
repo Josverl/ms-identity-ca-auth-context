@@ -5,7 +5,7 @@
 
 @if (!User.Identity.IsAuthenticated) { 
 <p>
-    To create Auth Context, user need to sign-in.
+    In order to create Authorization Context in the AAD tenant, the user/admin user must sign-in.
     Selecting @Html.ActionLink("Admin", "Index", "Admin") link will redirect to sign-in.
 </p>
 }
