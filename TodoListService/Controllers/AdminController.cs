@@ -71,6 +71,7 @@ public class AdminController : Controller
         return View();
     }
 
+    // CAAC
     // returns a default set of AuthN context values for the app to work with, either from Graph a or a default hard coded set
     private async Task<Dictionary<string, string>> GetAuthenticationContextValues()
     {
@@ -169,6 +170,7 @@ public class AdminController : Controller
     /// <summary>
     /// Create Authentication context for the tenant.
     /// </summary>
+    // CAAC
     private async Task CreateAuthContextViaGraph()
     {
         var dictACRValues = await GetAuthenticationContextValues();
